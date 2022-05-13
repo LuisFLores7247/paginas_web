@@ -1,0 +1,80 @@
+/* Globales */
+
+html {
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-align: center;
+}
+
+/* Indice y Portada */
+
+img {
+  width: 25%;
+}
+.card h3{
+  font-size: x-large;
+}
+.card h3 img {
+  padding-bottom: 1.5rem;
+}
+.fondo{
+ background-color: #585F66;
+}
+.card{
+  @media
+  margin: 2rem auto;
+  align-items: center;
+  width: 80vh;
+  height: 90vh;
+  background-color: #FFFFFF;
+  border-radius: 1.25rem;
+}
+.card h2{
+  font-size: xx-large;
+  font-weight: bolder;
+  padding-top: 5vh;
+}
+button {
+  background-color: #0D6EFD;
+  color: #FFFFFF;
+  height: 2.5rem;
+  width: 12rem;
+  margin: .75rem;
+  border-radius: .35rem;
+  cursor: pointer;
+  border: none;
+  font-weight: normal;
+  font-size: 20px;
+  transition: .5s;
+}
+button:hover{
+  background-color:#0B5ED9 ;
+}
+.titulo{
+    font-weight: bold;
+    font-size: 1cm;
+}
+
+.Nav{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Frames */
+
+#indice_f{
+  background-color: #FFFFFF;
+}
+#sup_f{
+  font-weight: Bold;
+  font-size: 20px;
+  color: white;
+  background-color: #585F66;
+}
+#centro_f{
+  background-image: url("/Frames/fondo2.jpg");
+  background-size: cover;
+}
