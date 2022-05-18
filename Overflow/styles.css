@@ -1,7 +1,6 @@
-
 #capa1, #capa2, #capa3, #capa4 {
   width: 200px;
-  height: 90px;
+  height: 100px;
   padding: 5px;
   border: solid 2px #0D6EFD;
   background: #8EBFFF;
@@ -16,5 +15,8 @@
 #capa4 {
   overflow: auto;
 }
-.card-c{
-padding-top: 3vh;}
+.div-c{
+  margin: .5rem auto;
+}
+
+
