@@ -59,4 +59,7 @@ div {
     width: 300px;
     background: #428bca;
   }
+  .caja, div{
+    margin: .5rem auto;
+  }
   
