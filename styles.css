@@ -78,3 +78,28 @@ button:hover{
   background-image: url("/Frames/fondo2.jpg");
   background-size: cover;
 }
+
+#indice2{
+  margin: 1rem auto;
+  align-items: center;
+  width: 97.5%;
+  height: 94vh;
+  background-color: #FFFFFF;
+  border-radius: 1.25rem;
+}
+#botones{
+  display: flex;
+}
+#botones div{
+  width: 50vh;
+  height: 75vh;
+}
+#botones a{
+  line-height: 1.54rem;
+  font-size: large;
+  text-decoration: none;
+  color: black;
+}
+
+
+
