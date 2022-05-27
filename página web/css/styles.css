@@ -28,7 +28,7 @@ h2 {
 
 header {
   height: 100vh;
-  background-image: url("img/Imagen-header.jpg");
+  background-image: url("/página web/img/Imagen-header.jpg");
   background-position: center center;
   background-size: cover;
 }
