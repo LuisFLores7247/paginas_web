@@ -24,7 +24,7 @@ a {
 h2 {
   font-size: 1.75rem;
 }
-h3{
+h3 {
   font-size: 1.5rem;
 }
 /* Header y nav */
@@ -58,48 +58,39 @@ nav a:hover {
 }
 
 #historia {
+  padding: 2.5rem 0;
   display: flex;
   justify-content: space-evenly;
-  text-align: center;
-  margin: 4rem auto;
-}
-
-/* Footer */
-footer {
+  background-color: #292c3c;
   color: white;
-  height: 3.5rem;
-  background-color: var(--nav);
-  display: flex;
-}
-footer h4 {
-  margin: 1.5rem auto;
-}
-
-.card p {
-  margin: 0.75rem 7.5rem;
-  text-align: justify;
-}
-.card {
-  padding: 1.5rem 0;
-  box-shadow: 0 0 5px var(--shadow);
-  border: 1px solid black;
-  align-items: center;
-  width: 130vh;
-  height: 140vh;
-  background-color: lightgray;
-  border-radius: 1.25rem;
-  text-align: center;
-}
-.card p {
   font-size: 1rem;
 }
-/* slider */
-.slider-form{
-  width: 55rem;
-  height: auto;
-  margin: 0 auto;
+.texto{
+  margin: 0 2.5rem;
+  text-align: justify;
+  width: 55%;
 }
-.slider h1{
+.texto h1{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.img-historia{
+  width: 45%;
+}
+.img-historia img{
+  padding: 50% auto;
+}
+
+/* slider */
+.galeria {
+  padding: 3rem 0;
+  background-color: #8e9ce7;
+}
+.slider-form {
+  width: 95%;
+  margin-top: 40%;
+}
+.slider h1 {
   padding-bottom: 2rem;
 }
 .slider {
@@ -150,63 +141,37 @@ footer h4 {
   }
 }
 
-/* niveles */
-
-.radiacion{
-  margin: 3rem auto;
-  text-align: center;
-}
-.radiacion tr,td{
-  padding: .5rem 1rem;
-}
-.radiacion table{
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 2rem auto;
-  border: 2px solid black;
-}
-.radiacion tr:nth-child(2){
-  background-color: red;
-}
-.radiacion tr:nth-child(3){
-  background-color: red;
-}.radiacion tr:nth-child(4){
-  background-color: red;
-}
-.radiacion tr:nth-child(5){
-  background-color: red;
-}.radiacion tr:nth-child(6){
-  background-color: red;
-}
-.radiacion tr:nth-child(7){
-  background-color: red;
-}
-.radiacion tr:nth-child(8){
-  background-color: red;
-}
-.radiacion tr:nth-child(9){
-  background-color: orange;
-}
-.radiacion tr:nth-child(10){
-  background-color: yellow;
-}
-.radiacion tr:nth-child(11){
-  background-color:yellow;
-}
-.radiacion tr:nth-child(12){
-  background-color: yellowgreen;
-  border-radius: 0 1.25rem;
-}
 /* Efectos */
-.efectos{
+.efectos {
   margin: 3rem auto;
   padding: 1.5rem 0;
   align-items: center;
   width: 130vh;
   text-align: center;
 }
-.efectos p{
+.efectos p {
   text-align: justify;
   font-size: 1rem;
   margin: 1rem 0;
+}
+.container-galeria {
+  width: 100%;
+}
+.row {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-galeria {
+  background-color: lightgray;
+  padding: 2rem 2rem;
+  width: 20rem;
+  height: 16rem;
+  border-radius: 0.5rem;
+}
+.card-galeria img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border-radius: 1rem;
 }
