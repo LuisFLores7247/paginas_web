@@ -402,3 +402,10 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
+
+.adp{
+  margin: 2rem 8rem;
+  text-align: justify;
+  font-size: 2rem;
+  line-height: 3rem;
+}

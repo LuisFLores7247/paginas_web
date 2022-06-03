@@ -1,6 +1,7 @@
 /* Declaración de variables y globales */
 :root {
-  --shadow: #23272e;
+  --bg:#23272E;
+  --shadow: #1E2227;
   --bg: white;
   --texto-nav: white;
 }
@@ -61,7 +62,7 @@ nav a:hover {
   padding: 2.5rem 0;
   display: flex;
   justify-content: space-evenly;
-  background-color: #292c3c;
+  background-color: var(--shadow);
   color: white;
   font-size: 1rem;
 }
@@ -78,7 +79,7 @@ nav a:hover {
   width: 45%;
 }
 .img-historia img{
-  padding: 50% auto;
+  width: 92.5%;
 }
 
 /* slider */
@@ -162,16 +163,28 @@ nav a:hover {
   display: flex;
   justify-content: space-evenly;
 }
+.bdy-galeria{
+background-color: #23272E;
+}
 .card-galeria {
-  background-color: lightgray;
-  padding: 2rem 2rem;
-  width: 20rem;
-  height: 16rem;
-  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 19);
+  text-align: center;
+  background-color: white;
+  width: 21rem;
+  height: 18.25rem;
+  transition: .5s;
+  margin: 1rem 0;
 }
 .card-galeria img {
   width: 100%;
   height: auto;
   padding: 0;
-  border-radius: 1rem;
 }
+.card-galeria h3{
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+}
+.card-galeria:hover{
+  transform: scale(1.1);
+}
+
