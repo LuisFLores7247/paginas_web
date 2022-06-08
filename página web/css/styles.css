@@ -1,9 +1,9 @@
 /* Declaración de variables y globales */
 :root {
-  --bg:#23272E;
-  --shadow: #1E2227;
-  --bg: white;
+  --bg: #252e35;
+  --shadow: #1e2227;
   --texto-nav: white;
+  --nav: #191f25;
 }
 html {
   scroll-behavior: smooth;
@@ -30,11 +30,15 @@ h3 {
 }
 /* Header y nav */
 
-header {
+#header-p {
   height: 100vh;
   background-image: url("/página web/img/Imagen-header.jpg");
   background-position: center center;
   background-size: cover;
+}
+.header-s{
+  height: 12.5vh;
+  background-color: var(--nav);
 }
 .navbar {
   display: flex;
@@ -54,7 +58,7 @@ nav a {
   margin: auto 1rem;
 }
 nav a:hover {
-  transition: 0.75s;
+  transition: .855s;
   color: crimson;
 }
 
@@ -62,23 +66,24 @@ nav a:hover {
   padding: 2.5rem 0;
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--shadow);
+  background-color: var(--bg);
   color: white;
   font-size: 1rem;
 }
-.texto{
+.texto {
+  color: white;
   margin: 0 2.5rem;
   text-align: justify;
   width: 55%;
 }
-.texto h1{
+.texto h1 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-.img-historia{
+.img-historia {
   width: 45%;
 }
-.img-historia img{
+.img-historia img {
   width: 92.5%;
 }
 
@@ -144,7 +149,7 @@ nav a:hover {
 
 /* Efectos */
 .efectos {
-  margin: 3rem auto;
+  margin: 3rem auto 0 auto;
   padding: 1.5rem 0;
   align-items: center;
   width: 130vh;
@@ -163,16 +168,14 @@ nav a:hover {
   display: flex;
   justify-content: space-evenly;
 }
-.bdy-galeria{
-background-color: #23272E;
-}
+
 .card-galeria {
   box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 19);
   text-align: center;
   background-color: white;
-  width: 21rem;
-  height: 18.25rem;
-  transition: .5s;
+  width: 25rem;
+  height: 15rem;
+  transition: 0.5s;
   margin: 1rem 0;
 }
 .card-galeria img {
@@ -180,11 +183,114 @@ background-color: #23272E;
   height: auto;
   padding: 0;
 }
-.card-galeria h3{
+.card-galeria h3 {
   font-size: 1.25rem;
   margin: 1.5rem 0;
 }
-.card-galeria:hover{
+.card-galeria:hover {
   transform: scale(1.1);
 }
 
+ body .arrows {
+	 position: relative;
+	/**/
+	 top: 60%;
+	 left: 50%;
+	 width: 80px;
+	/**/
+	 height: 80px;
+	 transform: translate(-50%, -50%);
+}
+ body .arrows:after {
+	 content: '';
+	 position: absolute;
+	 width: 75%;
+	 height: 75%;
+	 border-left: 26.6666666667px solid rgba(255, 255, 255, 1);
+	 border-bottom: 26.6666666667px solid rgba(255, 255, 255, 1);
+	 transform: translate(53.3333333333px, 0px) rotate(-45deg);
+	 animation: arrows 2.25s linear infinite -1.5s;
+}
+ @keyframes arrows {
+	 0% {
+		 border-left: 26.6666666667px solid rgba(0, 0, 0, 0);
+		 border-bottom: 26.6666666667px solid rgba(0, 0, 0, 0);
+		 transform: translate(-13.3333333333px, -53.3333333333px) rotate(-45deg);
+	}
+	 10%, 90% {
+		 border-left: 26.6666666667px solid rgba(0, 0, 0, 0);
+		 border-bottom: 26.6666666667px solid rgba(0, 0, 0, 0);
+	}
+	 50% {
+		 border-left: 26.6666666667px solid rgba(255, 255, 255, .85);
+		 border-bottom: 26.6666666667px solid rgba(255, 255, 255, .85);
+		 transform: translate(-13.3333333333px, 0px) rotate(-45deg);
+	}
+	 100% {
+		 border-left: 26.6666666667px solid rgba(0, 0, 0, 0);
+		 border-bottom: 26.6666666667px solid rgba(0, 0, 0, 0);
+		 transform: translate(-13.3333333333px, 53.3333333333px) rotate(-45deg);
+	}
+}
+
+.bg-t{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+}
+.texto-2{
+  margin: 0 2.5rem;
+  text-align: justify;
+  width: 55%;
+}
+.e1{
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--bg);
+  color: white;
+  font-size: 1rem;
+}
+.e2{
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  color: var(--bg);
+  font-size: 1rem;
+}
+.img-efectos {
+  width: 45%;
+}
+.img-efectos img{
+  margin: 2rem 2rem;
+  width: 85%;
+}
+.efectos{
+  width: 100%;
+}
+.efectos h1{
+  margin-bottom: 1.5rem;
+}
+.full-img{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 99;
+}
+.full-img span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+.full-img img{
+  width: 65%;
+}
