@@ -1,10 +1,19 @@
-const fullImgBox = document.getElementById("fullImgBox"),
-  fullImg = document.getElementById("fullImg");
+const images = document.querySelectorAll('.img');
+const containerImage = document.querySelector('.container-img');
+const imageContainer = document.querySelector('.img-show')
+const copy = document.querySelector('.copy')
+images.forEach(image=>{
+  image.addEventListener('click', ()=>{
+    addImage(image.getAttribute('src'), image.getAttribute('alt'));
+ 
+  })
+})
+const addImage = (srcImage,altImage)=>{
+  containerImage.classList.toggle('move');
+  imageContainer.src = srcImage;
+  copy.innerHTML = altImage;
 
-function openFullImg(reference) {
-  fullImgBox.style.display = "flex";
-  fullImg.src = reference;
 }
-function closeImg() {
-  fullImgBox.style.display = "none";
-}
+containerImage.addEventListener('click', ()=>{
+  containerImage.classList.toggle('move');
+})
